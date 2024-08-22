@@ -1,0 +1,253 @@
+/* Basic Reset and Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Settings Section */
+.settings {
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+/* Game Mode Selection */
+#game-mode-section {
+    margin-bottom: 20px;
+}
+
+#game-mode-section h2 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+#mode-selection {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/* Player Settings */
+.settings h2 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.settings label {
+    display: block;
+    margin-top: 10px;
+}
+
+.settings input[type="text"],
+.settings input[type="color"] {
+    margin: 5px 0;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.settings input[type="color"] {
+    width: 100px;
+    height: 40px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+/* Buttons */
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Game Board Styling */
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+    position: relative;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+}
+
+.cell.player1 {
+    background-color: var(--player1-color);
+    color: #ffffff;
+}
+
+.cell.player2 {
+    background-color: var(--player2-color);
+    color: #ffffff;
+}
+
+/* Winning Line */
+.winning-line {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+/* Game History */
+.history {
+    margin: 20px;
+    text-align: left;
+    max-height: 200px;
+    overflow-y: auto;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.history h2 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.history-item {
+    margin: 5px 0;
+}
+
+/* Clear History Button */
+#clear-history {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #dc3545;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#clear-history:hover {
+    background-color: #c82333;
+}
+
+/* Reset Button */
+#reset {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#reset:hover {
+    background-color: #e0a800;
+}
+
+/* Scoreboard */
+#score-board {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+#score-board p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    #game-board {
+        grid-template-columns: repeat(3, 80px);
+        gap: 3px;
+    }
+
+    .settings input[type="text"],
+    .settings input[type="color"] {
+        font-size: 14px;
+    }
+}
+
+
+/* Footer Styling */
+footer {
+    margin-top: 40px;
+    padding: 25px;
+    background-color: #ffffff;
+    border-top: 1px solid #e1e5ea;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+
+footer p {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Footer with Copyright */
+footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffffff;
+    border-top: 1px solid #cccccc;
+    font-size: 14px;
+}
+
+footer p {
+    margin: 0;
+    color: #666666;
+}

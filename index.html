@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe with AI</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Game Mode Selection -->
+        <div id="game-mode-section" class="settings">
+            <h1>Tic-Tac-Toe</h1>
+            <h2>Select Game Mode</h2>
+            <label for="mode-selection">Choose your opponent:</label>
+            <select id="mode-selection">
+                <option value="two-player">Two Players</option>
+                <option value="ai">Play Against Computer</option>
+            </select>
+            <button id="start-game">Start Game</button>
+        </div>
+
+        <!-- Player Settings -->
+        <div id="player1-section" class="settings" style="display:none;">
+            <h2>Player 1 Settings</h2>
+            <label for="player1-name">Player 1 Name:</label>
+            <input type="text" id="player1-name" value="Player 1">
+            <label for="player1-color">Player 1 Color:</label>
+            <input type="color" id="player1-color" value="#ff0000">
+        </div>
+
+        <div id="player2-section" class="settings" style="display:none;">
+            <h2>Player 2 Settings</h2>
+            <label for="player2-name">Player 2 Name:</label>
+            <input type="text" id="player2-name" value="Player 2">
+            <label for="player2-color">Player 2 Color:</label>
+            <input type="color" id="player2-color" value="#0000ff">
+        </div>
+
+        <div id="computer-section" class="settings" style="display:none;">
+            <h2>Computer Settings</h2>
+            <label for="computer-color">Computer Color:</label>
+            <input type="color" id="computer-color" value="#0000ff">
+        </div>
+
+        <button id="save-settings">Save Settings</button>
+
+        <!-- Game Board -->
+        <div id="game-board" class="board"></div>
+
+        <!-- Game History -->
+        <div id="history" class="history">
+            <h2>Game History</h2>
+        </div>
+
+        <!-- Control Buttons -->
+        <button id="reset">Reset Game</button>
+        <button id="clear-history">Clear History</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Juniorx Concept. All rights reserved.</p>
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
